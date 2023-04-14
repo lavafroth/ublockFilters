@@ -1,10 +1,10 @@
 ### comohoy.com filters and scripts:
 
-Go to UBO's advanced by clicking the cogwheel icons next to the "I am an advanced user" checkbox.
+Go to UBO's "Advanced settings" by clicking the cogwheel icons next to the "I am an advanced user" checkbox.
 If the `userResourcesLocation` is unset, set it to the following URL:
 
 ```
-https://raw.githubusercontent.com/lavafroth/ublockFilters/main/comohoy.com/comohoy_fast_forward.js
+https://raw.githubusercontent.com/lavafroth/ublockFilters/main/comohoy.com/comohoy.js
 ```
 
 If the value is already set, add a space and then the URL.

@@ -1,4 +1,4 @@
-/// comohoy_fast_forward
+/// comohoy.js
 window.addEventListener('load', function() {
     const anchorTags = document.querySelectorAll('a[href^="https://comohoy.com"][href*="url="]');
     for (const tag of anchorTags) {

@@ -1,2 +1,4 @@
 nypost.com##.ad__wrapper
 nypost.com##.open-web--single.d-block-lg.widget-wrapper > .widget
+nypost.com##.open-web--home.module > .sticky.ad
+nypost.com###header-billboard-ad

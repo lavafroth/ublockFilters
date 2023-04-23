@@ -1,1 +1,2 @@
 nypost.com##.ad__wrapper
+nypost.com##.open-web--single.d-block-lg.widget-wrapper > .widget

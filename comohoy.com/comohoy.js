@@ -12,6 +12,6 @@
     'use-strict';
 
     window.addEventListener('load', function() {
-        document.querySelectorAll('a[href^="https://comohoy.com"][href*="url="]').forEach(tag => tag.href = atob((new URLSearchParams(new URL(tag.href).search)).get('url')))
+        document.querySelectorAll('a[href^="https://comohoy.com"][href*="url="]').forEach(tag => {tag.href = atob((new URLSearchParams(new URL(tag.href).search)).get('url'))})
     }, false);
 })();

@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Bypass redirect
+// @name         Bypass comohoy redirect
 // @namespace    http://tampermonkey.net/
 // @version      1.0
 // @description  Bypasses redirect via comohoy.com/out.html

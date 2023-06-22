@@ -1,11 +1,17 @@
-/// comohoy.js
-window.addEventListener('load', function() {
-    const anchorTags = document.querySelectorAll('a[href^="https://comohoy.com"][href*="url="]');
-    for (const tag of anchorTags) {
-        const href = tag.getAttribute('href');
-        if (href.includes('url=')) {
-            const decodedUrl = decodeURIComponent(atob(href.split('url=')[1]));
-            tag.setAttribute('href', decodedUrl);
-        }
-    }
-}, false);
+// ==UserScript==
+// @name         Bypass redirect
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Bypasses redirect via comohoy.com/out.html
+// @author       lavafroth
+// @match        *://pornleaks.in/*
+// @icon         https://comohoy.com/favicon.png
+// @license      MIT
+// ==/UserScript==
+(function() {
+    'use-strict';
+
+    window.addEventListener('load', function() {
+        document.querySelectorAll('a[href^="https://comohoy.com"][href*="url="]').forEach(tag => tag.href = atob((new URLSearchParams(new URL(tag.href).search)).get('url')))
+    }, false);
+})();
